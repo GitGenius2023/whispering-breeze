@@ -1,2 +1,22 @@
-# whispering-breeze
-Gentle winds guide characters on a journey of introspection amidst tranquil landscapes, blending themes of solitude and the beauty of nature.
+import random
+
+# List of whispering sounds
+whispers = [
+    "ssshhh...",
+    "hush...",
+    "whisper...",
+    "softly...",
+    "quietly...",
+    "rustle...",
+    "sigh...",
+    "breathe...",
+]
+
+def whispering_breeze():
+    # Generate a random whispering sound
+    sound = random.choice(whispers)
+    return sound
+
+# Example usage
+if __name__ == "__main__":
+    print("The breeze whispers: ", whispering_breeze())
